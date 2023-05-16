@@ -5,20 +5,26 @@ import './App.css';
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <div className='container'>
+        <div className='FormArea'>
+          <div className='TitleArea'>
+            <h4 className='MemoTitle'>メモタイトル</h4>
+            <input type='text' className='MemoTitleForm'></input>
+          </div>
+          <div className='MainArea'>
+            <h4 className='MainTitle'>詳細</h4>
+            <input type='text' className='MainTitleForm'></input>
+          </div>
+          <div className='FriendArea'>
+            <h4 className='FriendTitle'>該当者</h4>
+            <select className='FriendForm'>
+              <option>友人A</option>
+              <option>友人B</option>
+              <option>友人CDEFG</option>
+            </select>
+          </div>
+        </div>
+      </div>
     </div>
   );
 }
